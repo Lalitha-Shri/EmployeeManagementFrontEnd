@@ -40,7 +40,7 @@ const AddEmployee = () => {
     try {
       if(id){
           await updateEmployee(id,employee);
-          navigate("/");
+          navigate("/user");
       }
       else{
         const response=await saveEmployee(employee);
